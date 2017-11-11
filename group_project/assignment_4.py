@@ -1,5 +1,5 @@
 def how_many_times(a_string, a_word):
-    pass
+    return a_string.count(a_word)
 
 
 def test_more_than_once():
@@ -15,3 +15,10 @@ def test_only_once():
 def test_none():
     phrase = "Python is a great language."
     assert how_many_times(phrase, "Ruby") == 0
+
+"""    
+a_string = 'Python is a great language.'
+a_word = 'Ruby'
+
+print(a_string.count(a_word))
+"""

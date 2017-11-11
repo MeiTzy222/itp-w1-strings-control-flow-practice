@@ -1,5 +1,10 @@
 def positions(a_string, first_word, second_word, third_word):
-    pass
+    a = str(a_string.find(first_word) if first_word in a_string else "-")
+    b = str(a_string.find(second_word) if second_word in a_string else "-")
+    c = str(a_string.find(third_word) if third_word in a_string else "-")
+    seq = (a,b,c)
+    s = ","
+    return s.join(seq)
 
 
 def test_three_occurrences():
